@@ -1,6 +1,6 @@
-import { Card } from "antd";
 import { useState } from "react";
-import { useMediaQuery } from "react-responsive";
+import { Card } from "antd";
+import "./CardService.scss"; // Nhớ import file CSS chứa các class mới
 
 interface CardServiceProps {
   urlImage?: string;
@@ -9,31 +9,44 @@ interface CardServiceProps {
   rate90?: string;
   rate120?: string;
 }
-const { Meta } = Card;
 
-export default function CardService(props: CardServiceProps) {
+const CardService = (props: CardServiceProps) => {
   const [loading, setLoading] = useState<boolean>(true);
-  const { urlImage, title, rate60, rate90, rate120 } = props;
-
   const handleImageLoad = () => {
     setLoading(false);
   };
-
-  // Media query for tablet or mobile devices
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
-
+  const { urlImage, title, rate60, rate90, rate120 } = props;
   return (
     <Card
       loading={loading}
       hoverable
-      cover={<img alt="example" src={urlImage} onLoad={handleImageLoad} />}
+      cover={
+        <div className="image-container">
+          <img
+            src={urlImage}
+            alt={title}
+            className="service-image"
+            onLoad={handleImageLoad}
+          />
+        </div>
+      }
+      
     >
-      <div style={{ display: isTabletOrMobile ? "none" : "block" }}>
-        <Meta
-          title={title}
-          description={`60min: ${rate60}, 90min: ${rate90}, 120min: ${rate120}`}
-        />
-      </div>
+      <Card.Meta
+        title={title}
+        description={
+          <>
+            <>
+              Rates: <br />
+              60min - {rate60} <br />
+              90min - {rate90} <br />
+              120min - {rate120}
+            </>
+          </>
+        }
+      />
     </Card>
   );
-}
+};
+
+export default CardService;

@@ -1,7 +1,15 @@
 @import "../../../components/Reponsive/Responsive.scss";
 .header-component {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1020px;
+  line-height: 64px;
+  margin: 0 auto;
   @include mobile {
     justify-content: end;
+    width: 400px;
   }
 
   .mobile-menu-button {
@@ -18,5 +26,10 @@
     @include mobile {
       display: none !important;
     }
+  }
+  .language-select {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
   }
 }

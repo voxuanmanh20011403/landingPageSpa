@@ -6,6 +6,9 @@ import { MenuOutlined } from "@ant-design/icons";
 import "./Styles.scss";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import eng from "../../../assets/images/local/engl.png";
+import kor from "../../../assets/images/local/kor.png";
+
 const { Header } = Layout;
 const { Option } = Select;
 const headerStyle: React.CSSProperties = {
@@ -46,49 +49,60 @@ export default function HeaderComponent() {
     i18n.changeLanguage(value);
   };
   return (
-    <Header style={headerStyle} className={classNames("header-component")}>
-      <Menu
-        className={classNames("laptop-menu")}
-        style={menu}
-        mode="horizontal"
-        defaultSelectedKeys={["1"]}
-      >
-        {menuItems.map((item) => (
-          <Menu.Item key={item.key} style={{ width: "10%" }}>
-            <Link to={item.path}>{t(item.label)}</Link>
-          </Menu.Item>
-        ))}
-      </Menu>
-
-      <Button
-        className="mobile-menu-button"
-        type="primary"
-        icon={<MenuOutlined />}
-        onClick={showDrawer}
-        style={{ display: "block" }}
-      />
-
-      <Drawer
-        title="Menu"
-        placement="right"
-        onClose={onClose}
-        visible={visible}
-        closable={true}
-      >
-        <Menu mode="vertical">
-          <Menu.Item key="1">Home</Menu.Item>
-          <Menu.Item key="2">About</Menu.Item>
-          <Menu.Item key="3">Contact</Menu.Item>
+    <>
+      <Header style={headerStyle} className={classNames("header-component")}>
+        <Menu
+          className={classNames("laptop-menu")}
+          style={menu}
+          mode="horizontal"
+          defaultSelectedKeys={["1"]}
+        >
+          {menuItems.map((item) => (
+            <Menu.Item key={item.key}>
+              <Link to={item.path}>{t(item.label)}</Link>
+            </Menu.Item>
+          ))}
         </Menu>
-      </Drawer>
-      <Select
-        defaultValue={i18n.language}
-        style={{ width: 100 }}
-        onChange={handleLanguageChange}
-      >
-        <Option value="en">English</Option>
-        <Option value="vi">Tiếng Việt</Option>
-      </Select>
-    </Header>
+
+        <Button
+          className="mobile-menu-button"
+          type="primary"
+          icon={<MenuOutlined />}
+          onClick={showDrawer}
+          style={{ display: "block" }}
+        />
+
+        <Select
+          defaultValue={i18n.language}
+          onChange={handleLanguageChange}
+          className="language-select"
+        >
+          <Option value="en">
+            <img src={eng} style={{ paddingRight: "5px" }} />
+            English
+          </Option>
+          <Option value="kor">
+            <img src={kor} style={{ paddingRight: "5px" }} />
+            한국어
+          </Option>
+        </Select>
+
+        <Drawer
+          title="Menu"
+          placement="right"
+          onClose={onClose}
+          visible={visible}
+          closable={true}
+        >
+          <Menu mode="vertical" defaultSelectedKeys={["1"]}>
+            {menuItems.map((item) => (
+              <Menu.Item key={item.key}>
+                <Link to={item.path}>{t(item.label)}</Link>
+              </Menu.Item>
+            ))}
+          </Menu>
+        </Drawer>
+      </Header>
+    </>
   );
 }

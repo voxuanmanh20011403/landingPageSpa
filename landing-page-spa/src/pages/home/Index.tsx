@@ -5,7 +5,7 @@ import Home from "./Home";
 export default function Homepage() {
   return (
     <>
-      <section style={{ height: "200px" }}>
+      <section>
         <SliderHome />
       </section>
       <Home />

@@ -1,7 +1,7 @@
 import { Typography } from "antd";
 import img from "../../assets/images/scroll.png";
 import React from "react";
-
+import "./styles.scss";
 const { Title } = Typography;
 
 interface TitleComponentProps {
@@ -13,7 +13,10 @@ export default function TitleComponent(props: TitleComponentProps) {
 
   return (
     <div>
-      <Title level={2} style={{ textAlign: "center", marginTop: "20px" }}>
+      <Title
+        className="title-common"
+        style={{ textAlign: "center", marginTop: "20px" }}
+      >
         {title?.split("<br />").map((line, index) => (
           <React.Fragment key={index}>
             {line}

@@ -1,5 +1,37 @@
 .ant-col {
-  max-width: 90%;
+  // max-width: 90%;
   margin: 0 auto;
-  
+}
+.form-services {
+  .ant-form-item-label > label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+  }
+  .ant-form-item {
+    margin: 2% 5%;
+  }
+  .ant-form-item-control-input-content {
+    display: grid;
+  }
+  .form-menu {
+    margin: 5%;
+  }
+  .form-menu-item {
+    margin: 1% 5%;
+    width: fit-content;
+  }
+  @keyframes blink {
+    0%,
+    100% {
+      transform: scale(1); /* Kích thước ban đầu */
+    }
+    50% {
+      transform: scale(1.2); /* Phóng to 20% */
+    }
+  }
+
+  .blinking-button {
+    animation: blink 1s infinite; /* 1 giây cho mỗi chu kỳ, lặp lại vô hạn */
+  }
 }
