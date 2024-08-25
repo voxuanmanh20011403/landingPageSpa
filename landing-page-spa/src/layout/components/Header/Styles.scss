@@ -1,0 +1,22 @@
+@import "../../../components/Reponsive/Responsive.scss";
+.header-component {
+  @include mobile {
+    justify-content: end;
+  }
+
+  .mobile-menu-button {
+    display: none !important;
+    @include mobile {
+      display: block !important;
+    }
+  }
+
+  .laptop-menu {
+    position: absolute;
+    justify-content: center;
+    left: 0;
+    @include mobile {
+      display: none !important;
+    }
+  }
+}
