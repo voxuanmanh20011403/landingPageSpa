@@ -1,3 +1,4 @@
+@import "../../../components/Reponsive/Responsive.scss";
 .content-component {
   text-align: center;
   min-height: 120;
@@ -5,5 +6,8 @@
   color: #fff;
   background: url("../../../assets//images/bgr.png");
   margin: 0 auto;
-  max-width: var(--width);
+  width: var(--width);
+  @include mobile {
+    width: 400px;
+  }
 }
