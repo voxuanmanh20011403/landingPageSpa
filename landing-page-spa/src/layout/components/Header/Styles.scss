@@ -1,4 +1,4 @@
-@import "../../../components/Reponsive/Responsive.scss";
+@import '../../../components/Reponsive/Responsive.scss';
 .header-component {
   z-index: 1;
   display: flex;
@@ -9,7 +9,7 @@
   margin: 0 auto;
   @include mobile {
     justify-content: end;
-    width: 400px;
+    width: 100%;
   }
 
   .mobile-menu-button {
