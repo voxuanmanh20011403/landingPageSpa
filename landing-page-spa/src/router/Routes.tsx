@@ -26,13 +26,7 @@ const routes = [
     component: <PriceList />,
     isDynamic: true,
   },
-  {
-    name: "spaceRoom",
-    key: "spaceRoom",
-    route: "/space-and-room",
-    component: <SpaceRoom />,
-    isDynamic: true,
-  },
+
   {
     name: "contact",
     key: "contact",

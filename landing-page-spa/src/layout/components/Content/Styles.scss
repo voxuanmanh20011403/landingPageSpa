@@ -8,6 +8,6 @@
   margin: 0 auto;
   width: var(--width);
   @include mobile {
-    width: 400px;
+    width: -webkit-fill-available;
   }
 }

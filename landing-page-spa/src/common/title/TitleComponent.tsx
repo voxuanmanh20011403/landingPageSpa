@@ -1,5 +1,5 @@
 import { Typography } from "antd";
-import img from "../../assets/images/title/image.png";
+import img from "../../assets/images/title/sec-shape-1.png";
 import React from "react";
 import "./styles.scss";
 const { Title } = Typography;

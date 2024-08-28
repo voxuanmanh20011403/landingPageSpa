@@ -1,0 +1,42 @@
+@import "../../../components//Reponsive/Responsive.scss";
+.vertical-steps .step-item {
+  transition: all 0.3s ease;
+  font-weight: 400;
+}
+
+.vertical-steps .step-item.active {
+  color: #1890ff;
+  font-weight: 600;
+}
+
+.vertical-steps .arrow-icon {
+  animation: move-arrow 2s infinite;
+  font-size: 18px;
+  color: #1890ff;
+}
+
+@keyframes move-arrow {
+  0% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+.verticalSteps {
+  .ant-steps {
+    margin-top: 25%;
+    font-size: xx-large;
+    @include mobile {
+      text-align: center;
+      margin-top: 0% !important;
+    }
+  }
+}
+
+.ant-steps-item-title {
+  font-size: larger;
+}

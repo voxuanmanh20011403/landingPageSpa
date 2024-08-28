@@ -1,37 +1,36 @@
-import { Button, Drawer, Layout, Menu, Select } from 'antd';
-import image from '../../../assets/images/image.png';
-import { useState } from 'react';
-import classNames from 'classnames';
-import { MenuOutlined } from '@ant-design/icons';
-import './Styles.scss';
-import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
-import eng from '../../../assets/images/local/engl.png';
-import kor from '../../../assets/images/local/kor.png';
+import { Button, Drawer, Layout, Menu, Select } from "antd";
+
+import { useState } from "react";
+import classNames from "classnames";
+import { MenuOutlined } from "@ant-design/icons";
+import "./Styles.scss";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import eng from "../../../assets/images/local/engl.png";
+import kor from "../../../assets/images/local/kor.png";
 
 const { Header } = Layout;
 const { Option } = Select;
 const headerStyle: React.CSSProperties = {
-  display: 'flex',
-  textAlign: 'center',
-  color: '#fff',
+  display: "flex",
+  textAlign: "center",
+  color: "#fff",
   height: 64,
   paddingInline: 48,
-  lineHeight: '64px',
-  background: ` url(${image}) no-repeat center/cover`,
+  lineHeight: "64px",
 };
 const menu: React.CSSProperties = {
   flex: 1,
   minWidth: 0,
-  width: '100%',
-  background: ` url(${image}) no-repeat center/cover`,
+  width: "100%",
+
+  fontFamily: "Work Sans",
 };
 const menuItems = [
-  { key: '1', label: 'home', path: '/' },
-  { key: '2', label: 'services', path: '/services' },
-  { key: '4', label: 'priceList', path: '/price-list' },
-  { key: '5', label: 'spaceAndRoom', path: '/space-and-room' },
-  { key: '6', label: 'contact', path: '/contact' },
+  { key: "1", label: "home", path: "/" },
+  { key: "2", label: "services", path: "/services" },
+  { key: "4", label: "priceList", path: "/price-list" },
+  { key: "6", label: "contact", path: "/contact" },
 ];
 
 export default function HeaderComponent() {
@@ -50,12 +49,12 @@ export default function HeaderComponent() {
   };
   return (
     <>
-      <Header style={headerStyle} className={classNames('header-component')}>
+      <Header style={headerStyle} className={classNames("header-component")}>
         <Menu
-          className={classNames('laptop-menu')}
+          className={classNames("laptop-menu")}
           style={menu}
-          mode='horizontal'
-          defaultSelectedKeys={['1']}
+          mode="horizontal"
+          defaultSelectedKeys={["1"]}
         >
           {menuItems.map((item) => (
             <Menu.Item key={item.key}>
@@ -65,30 +64,36 @@ export default function HeaderComponent() {
         </Menu>
 
         <Button
-          className='mobile-menu-button'
-          type='primary'
+          className="mobile-menu-button"
+          type="primary"
           icon={<MenuOutlined />}
           onClick={showDrawer}
-          style={{ display: 'block' }}
+          style={{ display: "block" }}
         />
 
         <Select
           defaultValue={i18n.language}
           onChange={handleLanguageChange}
-          className='language-select'
+          className="language-select"
         >
-          <Option value='en'>
-            <img src={eng} style={{ paddingRight: '5px' }} />
+          <Option value="en">
+            <img src={eng} style={{ paddingRight: "5px" }} />
             English
           </Option>
-          <Option value='kor'>
-            <img src={kor} style={{ paddingRight: '5px' }} />
+          <Option value="kor">
+            <img src={kor} style={{ paddingRight: "5px" }} />
             한국어
           </Option>
         </Select>
 
-        <Drawer title='Menu' placement='left' onClose={onClose} visible={visible} closable={true}>
-          <Menu mode='vertical' defaultSelectedKeys={['1']}>
+        <Drawer
+          title="Menu"
+          placement="left"
+          onClose={onClose}
+          visible={visible}
+          closable={true}
+        >
+          <Menu mode="vertical" defaultSelectedKeys={["1"]}>
             {menuItems.map((item) => (
               <Menu.Item key={item.key}>
                 <Link to={item.path}>{t(item.label)}</Link>

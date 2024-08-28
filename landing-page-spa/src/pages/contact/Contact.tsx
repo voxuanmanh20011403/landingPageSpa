@@ -1,8 +1,9 @@
 import classNames from "classnames";
 import React from "react";
 import FormService from "../../common/form-services/FormService";
-import { Card, Col, Row } from "antd";
+import { Col, Row } from "antd";
 import TitleComponent from "../../common/title/TitleComponent";
+import VerticalSteps from "./components/VerticalSteps";
 
 export default function Contact() {
   return (
@@ -10,11 +11,15 @@ export default function Contact() {
       <TitleComponent title="CONTACT US" />
       <Col xs={24} sm={24} md={12}></Col>
       <Row gutter={[16, 16]}>
-        <Col xs={24} sm={24} md={12}>
-          <Card hoverable cover={<FormService />}></Card>
+        <Col xs={24} sm={24} md={15}>
+          <FormService />
         </Col>
 
-        <Col xs={24} sm={24} md={12}></Col>
+        <Col xs={24} sm={24} md={9}>
+          <div style={{ padding: "20px" }}>
+            <VerticalSteps />
+          </div>
+        </Col>
       </Row>
     </section>
   );

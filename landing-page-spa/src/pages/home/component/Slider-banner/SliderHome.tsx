@@ -7,10 +7,12 @@ import "swiper/css/navigation";
 import "./SliderHome.scss";
 
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import slide1 from "../../../../assets/images/slide1.jpg";
-import slide2 from "../../../../assets/images/banner-3.jpg";
+import slide1 from "../../../../assets/images/home/slider/1.jpg";
+import slide2 from "../../../../assets/images/home/slider/5.jpg";
 
-import slide5 from "../../../../assets/images/banner-5.jpg";
+import slide3 from "../../../../assets/images/home/slider/service/image.png";
+import classNames from "classnames";
+import { SendOutlined } from "@ant-design/icons";
 
 export default function SliderHome() {
   return (
@@ -27,14 +29,51 @@ export default function SliderHome() {
         modules={[Autoplay, Pagination, Navigation]}
         className="swiper"
       >
-        <SwiperSlide>
-          <img style={{ height: "509px" }} src={slide1}></img>
+        <SwiperSlide className="swiper-slide">
+          <span>Spa & Beauty Center</span>
+          <span>Liệu pháp</span>
+          <span>spa chuyên nghiệp</span>
+          <span>
+            Với sự kết hợp hoàn hảo giữa yêu thương và chăm sóc, chúng tôi cam
+            kết mang đến cho bạn trải nghiệm spa vượt trội tại thành phố của
+            bạn.
+          </span>
+          <button className={classNames("swiper-slide-button")}>
+            Đặt lịch ngay
+            <SendOutlined />
+          </button>
+          <img style={{ height: "509px" }} src={slide1} alt="Spa Image" />
         </SwiperSlide>
         <SwiperSlide>
+          <span>Spa & Beauty Center</span>
+          <span>Liệu pháp</span>
+          <span>spa chuyên nghiệp</span>
+          <span>
+            Với sự kết hợp hoàn hảo giữa yêu thương và chăm sóc, chúng tôi cam
+            kết mang đến cho bạn trải nghiệm spa vượt trội tại thành phố của
+            bạn.
+          </span>
+          <button className={classNames("swiper-slide-button")}>
+            Đặt lịch ngay
+            <SendOutlined />
+          </button>
           <img style={{ height: "509px" }} src={slide2}></img>
         </SwiperSlide>
-        <SwiperSlide>
-          <img style={{ height: "509px" }} src={slide5}></img>
+
+        <SwiperSlide className="swiper-slide">
+          <span>Spa & Beauty Center</span>
+          <span>Liệu pháp</span>
+          <span>spa chuyên nghiệp</span>
+          <span>
+            Với sự kết hợp hoàn hảo giữa yêu thương và chăm sóc, chúng tôi cam
+            kết mang đến cho bạn trải nghiệm spa vượt trội tại thành phố của
+            bạn.
+          </span>
+          <button className={classNames("swiper-slide-button")}>
+            Đặt lịch ngay
+            <SendOutlined />
+          </button>
+          <img style={{ height: "509px" }} src={slide3} alt="Spa Image" />
         </SwiperSlide>
       </Swiper>
     </div>
