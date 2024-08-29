@@ -15,7 +15,7 @@ export default function TitleComponent(props: TitleComponentProps) {
     <div>
       <Title
         className="title-common"
-        style={{ textAlign: "center", marginTop: "20px" }}
+        style={{ textAlign: "center", marginTop: "-3px" }}
       >
         {title?.split("<br />").map((line, index) => (
           <React.Fragment key={index}>

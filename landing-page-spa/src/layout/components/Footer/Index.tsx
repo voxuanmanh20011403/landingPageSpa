@@ -28,14 +28,7 @@ export default function FooterComponent() {
             omnis assumenda, voluptates et.
           </Col>
           <Col xs={24} sm={24} md={8}>
-            <Row
-              justify="center"
-              // style={{
-              //   backgroundColor: "#1a1a1a",
-              //   padding: "20px",
-              //   color: "white",
-              // }}
-            >
+            <Row justify="center">
               <Col>
                 <Typography.Title level={4} style={{ color: "white" }}>
                   THÔNG TIN LIÊN LẠC

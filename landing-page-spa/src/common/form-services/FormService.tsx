@@ -7,15 +7,19 @@ import {
   DatePicker,
   Form,
   Input,
+  notification,
   Radio,
   Row,
   Typography,
 } from "antd";
 import dayjs from "dayjs";
 import { ServicesList } from "../../pages/Services/Services.string";
+import emailjs from "@emailjs/browser";
 
 export default function FormService() {
   const [dateTime, setDateTime] = React.useState<dayjs.Dayjs | null>(null);
+  const [form] = Form.useForm();
+  const [loading, setLoading] = React.useState(false);
 
   const handleChange = (value: dayjs.Dayjs | null) => {
     setDateTime(value);
@@ -38,15 +42,42 @@ export default function FormService() {
     },
   });
 
-  const onFinish = (values: any) => {
+  const sendEmail = async (values: any) => {
+    setLoading(true);
     try {
-      const formattedDateTime = dayjs(values.DatePicker).format(
-        "HH:mm DD/MM/YYYY"
-      );
-      console.log("Form Data: ", formattedDateTime);
+      await emailjs.send("service_4nomeb7", "template_l8zw4im", values, {
+        publicKey: "dLCeSbrDX5hdc30jP",
+      });
+
+      notification.success({
+        message: "Email Sent",
+        description: "Your email has been sent successfully!",
+        placement: "topRight",
+      });
+      form.resetFields();
     } catch (error) {
-      console.log("bug");
+      notification.error({
+        message: "Email Failed",
+        description: "There was an issue sending your email. Please try again.",
+        placement: "topRight",
+      });
+      console.log("error", error);
+    } finally {
+      setLoading(false);
     }
+  };
+
+  const onFinish = (values: any) => {
+    const formattedDateTime = dayjs(values.DatePicker).format(
+      "HH:mm DD/MM/YYYY"
+    );
+
+    const formData: any = {
+      ...values,
+      DatePicker: formattedDateTime,
+    };
+
+    sendEmail(formData);
   };
 
   const { Title } = Typography;
@@ -55,7 +86,7 @@ export default function FormService() {
       <Title style={{ fontFamily: '"Playfair Display", serif' }}>
         QUICK RESERVATION
       </Title>
-      <Form layout="vertical" onFinish={onFinish}>
+      <Form form={form} layout="vertical" onFinish={onFinish}>
         <Form.Item
           label="Name"
           name="name"
@@ -130,16 +161,27 @@ export default function FormService() {
         </Form.Item>
         <Row className="row">
           <Col span={12}>
-            <Form.Item name="checkbox" valuePropName="checked" label="Menu">
-              {ServicesList.map((item) => (
-                <Checkbox
-                  key={item.title}
-                  value={item.title}
-                  className="menu_item"
-                >
-                  {item.title}
-                </Checkbox>
-              ))}
+            <Form.Item
+              name="menu"
+              label="Menu"
+              rules={[
+                {
+                  required: true,
+                  message: "Please select at least one menu item!",
+                },
+              ]}
+            >
+              <Checkbox.Group>
+                {ServicesList.map((item) => (
+                  <Checkbox
+                    key={item.title}
+                    value={item.title}
+                    className="menu_item"
+                  >
+                    {item.title}
+                  </Checkbox>
+                ))}
+              </Checkbox.Group>
             </Form.Item>
           </Col>
 
@@ -159,7 +201,12 @@ export default function FormService() {
         </Form.Item>
 
         <Form.Item wrapperCol={{ offset: 6, span: 16 }}>
-          <Button type="primary" htmlType="submit" className="booking_btn">
+          <Button
+            type="primary"
+            htmlType="submit"
+            className="booking_btn"
+            loading={loading}
+          >
             BOOKING
           </Button>
         </Form.Item>
