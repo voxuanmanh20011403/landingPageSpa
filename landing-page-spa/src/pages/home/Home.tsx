@@ -7,9 +7,6 @@ import FormService from "../../common/form-services/FormService";
 import NumberCustomer from "./component/number-customer/NumberCustomer";
 import TitleComponent from "../../common/title/TitleComponent";
 import { useTranslation } from "react-i18next";
-import { Col, Row } from "antd";
-import img from "../../assets/images/home/slider/sr-shape-1-1.png";
-import anh1 from "../../assets/images/home/slider/service/1.png";
 
 export default function Home() {
   const { t } = useTranslation();

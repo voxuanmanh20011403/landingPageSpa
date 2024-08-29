@@ -117,3 +117,18 @@
   display: block;
   
 }
+
+.Contact-icon-fb{
+  position: fixed;
+
+  visibility: visible;
+  background-color: transparent;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+  z-index: 9999;
+  transition: visibility 0.5s;
+  right: 10px;
+  bottom: 15%;
+  display: block;
+}

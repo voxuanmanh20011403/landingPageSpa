@@ -2,7 +2,6 @@ import Contact from "../pages/contact/Contact";
 import Homepage from "../pages/home/Index";
 import PriceList from "../pages/price-list/PriceList";
 import Services from "../pages/Services/Services";
-import SpaceRoom from "../pages/space-room/SpaceRoom";
 
 const routes = [
   {
