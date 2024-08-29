@@ -50,15 +50,15 @@ export default function FormService() {
       });
 
       notification.success({
-        message: "Email Sent",
-        description: "Your email has been sent successfully!",
+        message: "Booking Success!",
+        description: "Your information has been sent to Zenith Spa!",
         placement: "topRight",
       });
       form.resetFields();
     } catch (error) {
       notification.error({
-        message: "Email Failed",
-        description: "There was an issue sending your email. Please try again.",
+        message: "Booking Failed",
+        description: "Sorry, please try again or contact Zenith Spa admin.",
         placement: "topRight",
       });
       console.log("error", error);
