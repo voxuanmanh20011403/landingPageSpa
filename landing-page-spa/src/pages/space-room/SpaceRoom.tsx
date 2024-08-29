@@ -1,5 +1,4 @@
 import classNames from "classnames";
-import React from "react";
 import { Col, Row } from "antd";
 import img from "../../assets/images/slide1.jpg";
 import img1 from "../../assets/images/slide2.jpg";

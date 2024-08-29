@@ -1,4 +1,3 @@
-import React from "react";
 import classNames from "classnames";
 import CardService from "./component/card-service/CardService";
 import TitleComponent from "../../common/title/TitleComponent";
