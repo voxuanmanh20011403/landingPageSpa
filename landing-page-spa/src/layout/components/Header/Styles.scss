@@ -1,4 +1,4 @@
-@import '../../../components/Reponsive/Responsive.scss';
+@import "../../../components/Reponsive/Responsive.scss";
 .header-component {
   z-index: 1;
   display: flex;
@@ -10,6 +10,7 @@
   @include mobile {
     justify-content: end;
     width: 100%;
+    background-color: beige;
   }
 
   .mobile-menu-button {
@@ -31,5 +32,11 @@
     margin-left: auto;
     display: flex;
     align-items: center;
+  }
+  .mobile-menu-button {
+    background-color: #fff;
+    span {
+      color: black;
+    }
   }
 }

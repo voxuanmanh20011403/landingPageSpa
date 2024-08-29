@@ -5,7 +5,7 @@ import classNames from "classnames";
 import { MenuOutlined } from "@ant-design/icons";
 import "./Styles.scss";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import eng from "../../../assets/images/local/engl.png";
 import kor from "../../../assets/images/local/kor.png";
 
@@ -26,16 +26,11 @@ const menu: React.CSSProperties = {
 
   fontFamily: "Work Sans",
 };
-const menuItems = [
-  { key: "1", label: "home", path: "/" },
-  { key: "2", label: "services", path: "/services" },
-  { key: "4", label: "priceList", path: "/price-list" },
-  { key: "6", label: "contact", path: "/contact" },
-];
 
 export default function HeaderComponent() {
   const [visible, setVisible] = useState(false);
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
 
   const showDrawer = () => {
     setVisible(true);
@@ -54,14 +49,30 @@ export default function HeaderComponent() {
           className={classNames("laptop-menu")}
           style={menu}
           mode="horizontal"
-          defaultSelectedKeys={["1"]}
-        >
-          {menuItems.map((item) => (
-            <Menu.Item key={item.key}>
-              <Link to={item.path}>{t(item.label)}</Link>
-            </Menu.Item>
-          ))}
-        </Menu>
+          defaultSelectedKeys={["/"]}
+          selectedKeys={[window.location.pathname]}
+          onClick={({ key }) => {
+            navigate(key);
+          }}
+          items={[
+            {
+              label: t("home"),
+              key: "/",
+            },
+            {
+              label: t("services"),
+              key: "/services",
+            },
+            {
+              label: t("priceList"),
+              key: "/price-list",
+            },
+            {
+              label: t("contact"),
+              key: "/contact",
+            },
+          ]}
+        />
 
         <Button
           className="mobile-menu-button"
@@ -93,13 +104,32 @@ export default function HeaderComponent() {
           visible={visible}
           closable={true}
         >
-          <Menu mode="vertical" defaultSelectedKeys={["1"]}>
-            {menuItems.map((item) => (
-              <Menu.Item key={item.key}>
-                <Link to={item.path}>{t(item.label)}</Link>
-              </Menu.Item>
-            ))}
-          </Menu>
+          <Menu
+            mode="vertical"
+            defaultSelectedKeys={["/"]}
+            selectedKeys={[window.location.pathname]}
+            onClick={({ key }) => {
+              navigate(key);
+            }}
+            items={[
+              {
+                label: t("home"),
+                key: "/",
+              },
+              {
+                label: t("services"),
+                key: "/services",
+              },
+              {
+                label: t("priceList"),
+                key: "/price-list",
+              },
+              {
+                label: t("contact"),
+                key: "/contact",
+              },
+            ]}
+          ></Menu>
         </Drawer>
       </Header>
     </>
