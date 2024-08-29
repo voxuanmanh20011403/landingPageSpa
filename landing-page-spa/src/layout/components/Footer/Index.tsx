@@ -1,6 +1,6 @@
 import { Col, Layout, Row } from "antd";
 import classNames from "classnames";
-import "./styles.scss";
+import "./Styles.scss";
 import { Space, Typography } from "antd";
 const { Footer } = Layout;
 import {
