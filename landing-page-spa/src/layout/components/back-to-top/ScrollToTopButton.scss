@@ -1,0 +1,32 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 12px;
+  background-color: #9a563a;
+  border-radius: 50% !important;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+
+  &.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &.fade-out {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  &:hover {
+    background-color: #000;
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
