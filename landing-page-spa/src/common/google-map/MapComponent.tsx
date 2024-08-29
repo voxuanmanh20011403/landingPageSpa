@@ -12,7 +12,9 @@ const MapComponent = () => {
   };
 
   return (
-    <LoadScript googleMapsApiKey="AIzaSyBfKx_XTgk1kIKd1hPTxrs5mzSv6r27zGs">
+    <LoadScript
+      googleMapsApiKey={import.meta.env.REACT_APP_GOOGLE_MAPS_API_KEY}
+    >
       <GoogleMap mapContainerStyle={mapStyles} zoom={17} center={defaultCenter}>
         <Marker position={defaultCenter} />
       </GoogleMap>
