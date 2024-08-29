@@ -1,3 +1,4 @@
+@import "../../../../components/Reponsive/Responsive.scss";
 body {
   background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -31,7 +32,8 @@ body {
 }
 .sliderHome {
   .swiper-button-next,
-  .swiper-button-prev {
+  .swiper-button-prev,
+  .swiper-pagination {
     display: none;
   }
 }
@@ -70,7 +72,6 @@ body {
 }
 
 .swiper-slide span {
-  position: absolute;
   color: white;
   text-align: center;
   width: 80%;
@@ -79,7 +80,6 @@ body {
 }
 
 .swiper-slide button {
-  position: absolute;
   color: white;
   text-align: center;
   width: 20%;
@@ -88,41 +88,70 @@ body {
 }
 
 .swiper-slide span:nth-child(1) {
-  top: 10%;
-  font-size: 26px;
+  font-size: 20px;
   animation: slideInFromLeft 1s ease forwards;
   animation-delay: 0.5s;
 }
 
 .swiper-slide span:nth-child(2) {
-  top: 25%;
   font-size: 46px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  padding: 10px;
   font-weight: bold;
   animation: slideInFromRight 1s ease forwards;
   animation-delay: 1s;
+  @include mobile {
+    font-size: 35px;
+  }
 }
 
 .swiper-slide span:nth-child(3) {
-  top: 40%;
   font-size: 46px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  padding: 10px;
   font-weight: bold;
   animation: slideInFromRight 1s ease forwards;
   animation-delay: 1s;
+  @include mobile {
+    font-size: 35px;
+  }
 }
 .swiper-slide span:nth-child(4) {
-  top: 65%;
-  width: 80%;
+  padding: 20px;
   font-size: 16px;
   animation: slideInFromLeft 1s ease forwards;
   animation-delay: 1.5s;
 }
 .swiper-slide button {
-  top: 85%;
-  padding: 10px 20px;
   background-color: #a0522d;
+  font-weight: 700;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
   animation: slideInFromBottom 1s ease forwards;
   animation-delay: 2s;
 }
+// .sliderHome button:hover {
+//   background-color: red;
+// }
+
+// .helele button {
+//   background-color: #a0522d;
+//   font-weight: 700;
+//   border: none;
+//   cursor: pointer;
+//   animation: slideInFromBottom 1s ease forwards;
+//   animation-delay: 2s;
+//   transition: background-color 0.3s ease, box-shadow 0.3s ease,
+//     transform 0.3s ease;
+// }
+
+// .helele button:hover {
+//   background-color: #d2691e; // Slightly lighter shade of brown
+//   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+//   transform: translateY(-3px); // Slight lift on hover
+// }
+
+// .helele button:active {
+//   background-color: #8b4513; // Darker shade when active
+//   transform: translateY(1px); // Slight press effect
+// }

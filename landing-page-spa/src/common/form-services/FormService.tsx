@@ -83,7 +83,10 @@ export default function FormService() {
   const { Title } = Typography;
   return (
     <div className="form-services">
-      <Title style={{ fontFamily: '"Playfair Display", serif' }}>
+      <Title
+        style={{ fontFamily: '"Playfair Display", serif' }}
+        className="form-services-title"
+      >
         QUICK RESERVATION
       </Title>
       <Form form={form} layout="vertical" onFinish={onFinish}>

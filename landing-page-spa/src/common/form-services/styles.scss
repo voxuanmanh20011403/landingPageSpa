@@ -44,4 +44,10 @@
   .booking_btn {
     margin: 16px;
   }
+  .form-services-title {
+
+    @include mobile {
+      font-size: 30px;
+    }
+  }
 }

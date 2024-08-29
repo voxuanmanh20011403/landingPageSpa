@@ -1,3 +1,4 @@
+@import "..//../components/Reponsive/Responsive.scss";
 .title-common {
   font-family: "Playfair Display", serif;
   padding-top: 20px;
@@ -5,5 +6,9 @@
   text-transform: capitalize;
   line-height: 5.1rem !important;
   margin-bottom: 0;
+  text-align: center;
+  margin-top: -3px;
+  @include mobile {
+    font-size: 26px !important;
+  }
 }
- 
