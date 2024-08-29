@@ -8,11 +8,11 @@ import {
   PhoneOutlined,
   MailOutlined,
   SkypeOutlined,
-  TwitterOutlined,
-  FacebookOutlined,
-  LinkedinOutlined,
-  YoutubeOutlined,
-  GithubOutlined,
+  // TwitterOutlined,
+  // FacebookOutlined,
+  // LinkedinOutlined,
+  // YoutubeOutlined,
+  // GithubOutlined,
 } from "@ant-design/icons";
 import MapComponent from "../../../common/google-map/MapComponent";
 const { Text } = Typography;
