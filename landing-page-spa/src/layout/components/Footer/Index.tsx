@@ -14,6 +14,7 @@ import {
   YoutubeOutlined,
   GithubOutlined,
 } from "@ant-design/icons";
+import MapComponent from "../../../common/google-map/MapComponent";
 const { Text } = Typography;
 export default function FooterComponent() {
   return (
@@ -61,7 +62,7 @@ export default function FooterComponent() {
             </Row>
           </Col>
           <Col xs={24} sm={24} md={8}>
-            <Row justify="center">
+            {/* <Row justify="center">
               <Typography.Title level={4} style={{ color: "white" }}>
                 <Space>
                   <TwitterOutlined />
@@ -71,7 +72,8 @@ export default function FooterComponent() {
                   <GithubOutlined />
                 </Space>
               </Typography.Title>
-            </Row>
+            </Row> */}
+            <MapComponent />
           </Col>
         </Row>
       </div>
