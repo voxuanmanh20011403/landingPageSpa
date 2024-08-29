@@ -10,11 +10,9 @@ const MapComponent = () => {
     lat: 16.0685096, // Latitude của Zenith Spa
     lng: 108.2447479, // Longitude của Zenith Spa
   };
-
+  console.log(process.env.API_URL);
   return (
-    <LoadScript
-      googleMapsApiKey={import.meta.env.REACT_APP_GOOGLE_MAPS_API_KEY}
-    >
+    <LoadScript googleMapsApiKey="">
       <GoogleMap mapContainerStyle={mapStyles} zoom={17} center={defaultCenter}>
         <Marker position={defaultCenter} />
       </GoogleMap>
