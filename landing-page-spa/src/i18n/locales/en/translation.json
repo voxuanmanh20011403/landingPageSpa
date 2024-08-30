@@ -5,5 +5,68 @@
   "spaceAndRoom": "Space",
   "contact": "Contact",
   "home.refund": "IF YOU’RE NOT SATISFIED PLEASE DO NOT TO PAY !",
-  "spaCenter": "Spa & Beauty Center"
+  "spaCenter": "Spa & Beauty Center",
+
+  "home.title": "HEALING HANDS SPA 5% <br /> OFF FOR PREVIOUS BOOKERS",
+  "home.description1": " With more than 10 years of experience working as well as teaching in the field of massage in Ho Chi Minh City. Coming to service",
+  "home.description2": " Massage Da Nang with enthusiasm and a team of skilled technicians, we have been receiving a lot of satisfaction from many customers.",
+  "home.description3": "We are committed to bringing real value to you.",
+  "home.numberCustomerYear": "Opening day of the year",
+  "home.numberCustomerSatisfaction": "Customer Satisfaction",
+  "home.numberCustomerAvailable": "Beds are available",
+
+  "home.formService.message.success": "Booking Success!",
+  "home.formService.description.success": "Your information has been sent to Zenith Spa!",
+  "home.formService.message.error": "Booking Failed",
+  "home.formService.description.error": "Sorry, please try again or contact Zenith Spa admin.",
+
+  "home.formService.title": "QUICK RESERVATION",
+
+  "home.formService.name": "Name",
+  "home.formService.name.message": "Please fill your name!",
+  "home.formService.name.massage2": "Name must contain only letters (including Vietnamese letters), spaces, and valid punctuation!",
+  "home.formService.name.placeholder": "Full name",
+
+  "home.formService.phone": "Phone",
+  "home.formService.phone.message": "Please fill your phone number!",
+  "home.formService.phone.placeholder": "Number phone",
+
+  "home.formService.email": "Email",
+  "home.formService.email.message": "Please fill your email!",
+  "home.formService.email.massage2": "The input is not valid E-mail! For example: ...@gmail.com",
+  "home.formService.email.placeholder": "Email contact",
+
+  "home.formService.people": "Number of People",
+  "home.formService.people.message": "Please fill the number of people!",
+  "home.formService.people.massage2": "Number of people must be a valid number!",
+  "home.formService.people.placeholder": "How many people?",
+
+  "home.formService.datePicker": "Date/Time Checkin ",
+  "home.formService.datePicker.message": "Please select a date and time!",
+
+  "home.formService.menu": "Menu",
+  "home.formService.menu.message": "Please select at least one menu item!",
+
+  "home.formService.duration": "Duration",
+
+  "home.formService.requirements": "Message",
+  "home.formService.requirements.placeholder": "Other requirements ?",
+
+  "home.formService.button": "BOOKING",
+
+  "footer.spa.title": "Zenith Spa",
+  "footer.spa.content": "With more than 10 years of experience working as well as teaching in the field of massage in Ho Chi Minh City. Coming to service Massage Da Nang with enthusiasm and a team of skilled technicians, we have been receiving a lot of satisfaction from many customers.We are committed to bringing real value to you.",
+  "footer.information.title": "CONTACT INFORMATION",
+  "footer.information.address": "204 Võ Nguyên Giáp, Phước Mỹ, Sơn Trà, Đà Nẵng",
+  "footer.information.phone": "0374 811 004",
+  "footer.information.email": "zenithspadn@gmail.com",
+
+  "contact.step1": "Booking in zenithspadn.com",
+  "contact.step2": "Spa Confirm via email or phone number",
+  "contact.step3": "Arrive at the spa with an appointment",
+  "contact.step4": "Staff will advise on suitable service packages",
+  "contact.step5": "Enjoy fruit, tea, medicinal foot bath",
+  "contact.step6": "Choose massage scent and notes for the Technician",
+  "contact.step7": "Change clothes and enjoy the comfortable feeling",
+  "contact.step8": "Pay and give feedback after completion"
 }

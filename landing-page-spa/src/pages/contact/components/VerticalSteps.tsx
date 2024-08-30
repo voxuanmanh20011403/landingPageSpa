@@ -3,25 +3,23 @@ import { Steps } from "antd";
 import { ArrowRightOutlined } from "@ant-design/icons";
 import "./VerticalSteps.scss";
 import classNames from "classnames";
+import { useTranslation } from "react-i18next";
 
 const { Step } = Steps;
 
-const steps = [
-  { title: "Step 1", content: "Booking" },
-  { title: "Step 2", content: "Spa Confirm qua email hoặc số điện thoại" },
-  { title: "Step 3", content: "Đến spa với lịch hẹn" },
-  { title: "Step 4", content: "Nhân Viên tư vấn lại các gói" },
-  {
-    title: "Step 5",
-    content: "Thưởng thức trái cây, trà, ngâm chân dược liệu",
-  },
-  { title: "Step 6", content: "Chọn mùi matxa và các lưu ý cho Kỹ thuật viên" },
-  { title: "Step 7", content: "Thay đồ và tận hưởng cảm giác thoải mái" },
-  { title: "Step 8", content: "Thanh Toán và góp ý sau khi hoàn thành" },
-];
-
 const VerticalSteps: React.FC = () => {
   const [current, setCurrent] = useState(0);
+  const { t } = useTranslation();
+  const steps = [
+    { title: "Step 1", content: t("contact.step1") },
+    { title: "Step 2", content: t("contact.step2") },
+    { title: "Step 3", content: t("contact.step3") },
+    { title: "Step 4", content: t("contact.step4") },
+    { title: "Step 5", ontent: t("contact.step5") },
+    { title: "Step 6", content: t("contact.step6") },
+    { title: "Step 7", content: t("contact.step7") },
+    { title: "Step 8", content: t("contact.step8") },
+  ];
 
   useEffect(() => {
     const interval = setInterval(() => {

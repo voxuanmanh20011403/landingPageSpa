@@ -52,9 +52,10 @@ const SliderHome = () => {
       centeredSlides={true}
       loop={true}
       autoplay={{
-        delay: 10000,
+        delay: 5000,
         disableOnInteraction: false,
       }}
+      speed={2000}
       navigation={true}
       modules={[Autoplay, Pagination, Navigation]}
       className="sliderHome"

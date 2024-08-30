@@ -15,11 +15,13 @@ import {
 import dayjs from "dayjs";
 import { ServicesList } from "../../pages/Services/Services.string";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
 
 export default function FormService() {
   const [dateTime, setDateTime] = React.useState<dayjs.Dayjs | null>(null);
   const [form] = Form.useForm();
   const [loading, setLoading] = React.useState(false);
+  const { t } = useTranslation();
 
   const handleChange = (value: dayjs.Dayjs | null) => {
     setDateTime(value);
@@ -43,6 +45,8 @@ export default function FormService() {
   });
 
   const sendEmail = async (values: any) => {
+    if (loading) return;
+
     setLoading(true);
     try {
       await emailjs.send("service_4nomeb7", "template_l8zw4im", values, {
@@ -50,20 +54,22 @@ export default function FormService() {
       });
 
       notification.success({
-        message: "Booking Success!",
-        description: "Your information has been sent to Zenith Spa!",
+        message: t("home.formService.message.success"),
+        description: t("home.formService.description.success"),
         placement: "topRight",
       });
       form.resetFields();
     } catch (error) {
       notification.error({
-        message: "Booking Failed",
-        description: "Sorry, please try again or contact Zenith Spa admin.",
+        message: t("home.formService.message.error"),
+        description: t("Sorry, please try again or contact Zenith Spa admin."),
         placement: "topRight",
       });
       console.log("error", error);
     } finally {
-      setLoading(false);
+      setTimeout(() => {
+        setLoading(false);
+      }, 3000);
     }
   };
 
@@ -87,68 +93,78 @@ export default function FormService() {
         style={{ fontFamily: '"Playfair Display", serif' }}
         className="form-services-title"
       >
-        QUICK RESERVATION
+        {t("home.formService.title")}
       </Title>
       <Form form={form} layout="vertical" onFinish={onFinish}>
         <Form.Item
-          label="Name"
+          label={t("home.formService.name")}
           name="name"
           rules={[
-            { required: true, message: "Please input your name!" },
+            { required: true, message: t("home.formService.name.message") },
             {
               pattern: /^[\p{L}\s.,!?'-]+$/u,
-              message:
-                "Name must contain only letters (including Vietnamese letters), spaces, and valid punctuation!",
+              message: t("home.formService.name.massage2"),
             },
           ]}
         >
-          <Input placeholder="Full name" size="large" />
+          <Input
+            placeholder={t("home.formService.name.placeholder")}
+            size="large"
+          />
         </Form.Item>
 
         <Form.Item
-          label="Phone"
+          label={t("home.formService.phone")}
           name="phone"
           rules={[
-            { required: true, message: "Please input your phone number!" },
-            {
-              pattern: /^[0-9]{10}$/,
-              message: "Phone number must be 10 digits!",
-            },
+            { required: true, message: t("home.formService.phone.message") },
           ]}
         >
-          <Input placeholder="Number phone" size="large" />
+          <Input
+            placeholder={t("home.formService.phone.placeholder")}
+            size="large"
+          />
         </Form.Item>
 
         <Form.Item
-          label="Email"
+          label={t("home.formService.email")}
           name="email"
           rules={[
-            { required: true, message: "Please input your email!" },
-            { type: "email", message: "The input is not valid E-mail!" },
+            { required: true, message: t("home.formService.email.message") },
+            { type: "email", message: t("home.formService.email.massage2") },
           ]}
         >
-          <Input placeholder="Email contact" size="large" />
+          <Input
+            placeholder={t("home.formService.email.placeholder")}
+            size="large"
+          />
         </Form.Item>
 
         <Form.Item
-          label="Number of People *"
+          label={t("home.formService.people")}
           name="people"
           rules={[
-            { required: true, message: "Please input the number of people!" },
+            { required: true, message: t("home.formService.people.message") },
             {
               pattern: /^[0-9]{1,2}$/,
-              message: "Number of people must be a valid number!",
+              message: t("home.formService.people.massage2"),
             },
           ]}
         >
-          <Input placeholder="How many people?" size="large" />
+          <Input
+            placeholder={t("home.formService.people.placeholder")}
+            size="large"
+          />
         </Form.Item>
 
         <Form.Item
-          label="Date/Time Checkin "
+          label={t("home.formService.datePicker")}
           name="DatePicker"
           rules={[
-            { required: true, message: "Please select a date and time!" },
+            {
+              required: true,
+              message: t("home.formService.datePicker.message"),
+            },
           ]}
         >
           <DatePicker
@@ -165,12 +181,12 @@ export default function FormService() {
         <Row className="row">
           <Col span={12}>
             <Form.Item
-              name="menu"
+              name={t("home.formService.menu")}
               label="Menu"
               rules={[
                 {
                   required: true,
-                  message: "Please select at least one menu item!",
+                  message: t("home.formService.menu.message"),
                 },
               ]}
             >
@@ -189,18 +205,21 @@ export default function FormService() {
           </Col>
 
           <Col span={12}>
-            <Form.Item name="duration" label={"Duration"}>
+            <Form.Item name="duration" label={t("home.formService.duration")}>
               <Radio.Group className="wrap_radio">
                 <Radio value="30"> 30 mins </Radio>
                 <Radio value="60"> 60 mins </Radio>
-                <Radio value="90"> 90 mins </Radio>
+                <Radio value="120"> 120 mins </Radio>
               </Radio.Group>
             </Form.Item>
           </Col>
         </Row>
 
-        <Form.Item label="Message" name="requirements">
-          <Input placeholder="Other requirements ?" size="large" />
+        <Form.Item label="Message" name={t("home.formService.requirements")}>
+          <Input
+            placeholder={t("home.formService.requirements.placeholder")}
+            size="large"
+          />
         </Form.Item>
 
         <Form.Item wrapperCol={{ offset: 6, span: 16 }}>
@@ -210,7 +229,7 @@ export default function FormService() {
             className="booking_btn"
             loading={loading}
           >
-            BOOKING
+            {t("home.formService.button")}
           </Button>
         </Form.Item>
       </Form>

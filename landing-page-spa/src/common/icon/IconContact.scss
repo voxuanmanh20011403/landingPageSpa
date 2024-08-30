@@ -1,4 +1,6 @@
-.halbg {
+@import "../../components/Reponsive/Responsive.scss";
+
+.border-img {
   width: 60px;
   height: 60px;
   top: 25px;
@@ -16,7 +18,7 @@
   -webkit-animuiion: zoom 1.3s infinite;
   animation: zoom 1.3s infinite;
 }
-.halimg {
+.border-img {
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -102,9 +104,11 @@
   }
 }
 
-.Contact-icon {
+.Contact-icon,
+.Contact-icon-whatsapp,
+.Contact-icon-fb,
+.Contact-icon-kakao {
   position: fixed;
-
   visibility: visible;
   background-color: transparent;
   width: 90px;
@@ -112,23 +116,43 @@
   cursor: pointer;
   z-index: 9999;
   transition: visibility 0.5s;
-  right: 10px;
-  bottom: 10%;
   display: block;
-  
 }
 
-.Contact-icon-fb{
-  position: fixed;
-
-  visibility: visible;
-  background-color: transparent;
-  width: 90px;
-  height: 90px;
-  cursor: pointer;
-  z-index: 9999;
-  transition: visibility 0.5s;
+.Contact-icon {
   right: 10px;
-  bottom: 20%;
-  display: block;
+  bottom: 15%;
+  @include mobile {
+    bottom: 10%;
+  }
+}
+.Contact-icon-fb {
+  right: 10px;
+  bottom: 25%;
+  @include mobile {
+    bottom: 20%;
+  }
+}
+
+.Contact-icon-whatsapp {
+  right: 10px;
+  bottom: 35%;
+  @include mobile {
+    bottom: 30%;
+  }
+}
+
+.Contact-icon-kakao {
+  right: 10px;
+  bottom: 45%;
+  @include mobile {
+    bottom: 40%;
+  }
+}
+.Contact-icon-map {
+  right: 10px;
+  bottom: 45%;
+  @include mobile {
+    bottom: 40%;
+  }
 }

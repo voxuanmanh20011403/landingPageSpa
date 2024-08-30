@@ -14,32 +14,13 @@ export default function Home() {
     <section className={classNames("home content-component")}>
       <div className={classNames("home-content")}>
         <div>
-          {/* <Row gutter={[16, 16]}>
-            <Col xs={24} sm={24} md={8}>
-              <div className="service-style-right">
-                <img className="service-style-right-img" src={anh1} alt="" />
-                <div className="">
-                  <h3 className="service-title">Discover New </h3>
-                  <span className="service-text">
-                    There are many variations of passages gaks the majority.
-                  </span>
-                </div>
-              </div>
-            </Col>
-            <Col xs={24} sm={24} md={8}>
-              <div className="service-style">
-                <img style={{ width: "40%" }} src={img} alt="" />
-              </div>
-            </Col>
-            <Col xs={24} sm={24} md={8}></Col>
-          </Row> */}
-          <TitleComponent title="HEALING HANDS SPA 5% <br /> OFF FOR PREVIOUS BOOKERS" />
+          <TitleComponent title={t("home.title")} />
           <div className="description">
-            With more than 10 years of experience working as well as teaching in
-            the field of massage in Ho Chi Minh City. Coming to service <br />
-            Massage Da Nang with enthusiasm and a team of skilled technicians,
-            we have been receiving a lot of satisfaction from many customers.
-            <br /> We are committed to bringing real value to you.
+            {t("home.description1")}
+            <br />
+            {t("home.description2")}
+            <br />
+            {t("home.description3")}
           </div>
           <div
             style={{

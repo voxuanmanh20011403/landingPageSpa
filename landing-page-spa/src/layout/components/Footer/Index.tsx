@@ -7,73 +7,57 @@ import {
   HomeOutlined,
   PhoneOutlined,
   MailOutlined,
-  SkypeOutlined,
-  // TwitterOutlined,
-  // FacebookOutlined,
-  // LinkedinOutlined,
-  // YoutubeOutlined,
-  // GithubOutlined,
+  WhatsAppOutlined,
 } from "@ant-design/icons";
 import MapComponent from "../../../common/google-map/MapComponent";
+import { useTranslation } from "react-i18next";
 const { Text } = Typography;
 export default function FooterComponent() {
+  const { t } = useTranslation();
   return (
     <Footer className={classNames("footer-component")}>
       <div className="footer-component-row">
         <Row gutter={[16, 16]}>
           <Col xs={24} sm={24} md={8}>
-            <h1>Zenith Spa</h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta a
-            exercitationem fugiat architecto laboriosam excepturi enim atque
-            nihil neque ipsam corporis delectus modi iure molestias voluptatum
-            omnis assumenda, voluptates et.
+            <h1>{t("footer.spa.title")}</h1>
+            {t("footer.spa.content")}
           </Col>
           <Col xs={24} sm={24} md={8}>
             <Row justify="center">
               <Col>
                 <Typography.Title level={4} style={{ color: "white" }}>
-                  THÔNG TIN LIÊN LẠC
+                  {t("footer.information.title")}
                 </Typography.Title>
                 <Space direction="vertical" size="middle">
                   <Space>
                     <HomeOutlined />
-                    <Text>
-                      319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM
-                    </Text>
+                    <Text>{t("footer.information.title")}</Text>
                   </Space>
                   <Space>
                     <PhoneOutlined />
-                    <Text>1900 636 648</Text>
+                    <Text>{t("footer.information.phone")}</Text>
                   </Space>
                   <Space>
                     <MailOutlined />
-                    <Text>demonhunterg@gmail.com</Text>
+                    <Text>{t("footer.information.email")}</Text>
                   </Space>
+
                   <Space>
-                    <MailOutlined />
-                    <Text>mon@mona.media</Text>
-                  </Space>
-                  <Space>
-                    <SkypeOutlined />
-                    <Text>demonhunterp</Text>
+                    <WhatsAppOutlined />
+
+                    <Text>{t("footer.information.phone")}</Text>
                   </Space>
                 </Space>
               </Col>
             </Row>
           </Col>
           <Col xs={24} sm={24} md={8}>
-            {/* <Row justify="center">
+            <Row>
               <Typography.Title level={4} style={{ color: "white" }}>
-                <Space>
-                  <TwitterOutlined />
-                  <FacebookOutlined />
-                  <LinkedinOutlined />
-                  <YoutubeOutlined />
-                  <GithubOutlined />
-                </Space>
+                GOOGLE MAPS
               </Typography.Title>
-            </Row> */}
-            <MapComponent />
+              <MapComponent />
+            </Row>
           </Col>
         </Row>
       </div>

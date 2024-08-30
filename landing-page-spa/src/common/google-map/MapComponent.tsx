@@ -2,13 +2,13 @@ import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
 const MapComponent = () => {
   const mapStyles = {
-    height: "400px",
+    height: "150px",
     width: "100%",
   };
 
   const defaultCenter = {
-    lat: 16.0685096, // Latitude của Zenith Spa
-    lng: 108.2447479, // Longitude của Zenith Spa
+    lat: 16.0685096,
+    lng: 108.2447479,
   };
   console.log(process.env.API_URL);
   return (
