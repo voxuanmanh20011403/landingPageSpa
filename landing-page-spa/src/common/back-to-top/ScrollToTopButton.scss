@@ -1,3 +1,4 @@
+@import "../../components/Reponsive/Responsive.scss";
 .scroll-to-top {
   position: fixed;
   bottom: 20px;
@@ -13,7 +14,10 @@
   opacity: 0;
   transform: translateY(-50px);
   transition: opacity 0.5s ease, transform 0.5s ease;
-
+  z-index: 1;
+  @include mobile {
+    right: 13px;
+  }
   &.fade-in {
     opacity: 1;
     transform: translateY(0);

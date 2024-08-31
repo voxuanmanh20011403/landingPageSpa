@@ -5,7 +5,7 @@ import { ArrowUpOutlined } from "@ant-design/icons";
 const ScrollToTopButton: React.FC = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
 
-  // Xử lý sự kiện cuộn
+
   const toggleVisibility = () => {
     if (window.pageYOffset > 500) {
       setIsVisible(true);
@@ -19,7 +19,7 @@ const ScrollToTopButton: React.FC = () => {
       top: 0,
       behavior: "smooth",
     });
-    setIsVisible(false); // Ẩn nút khi đã cuộn lên đầu trang
+    setIsVisible(false); 
   };
 
   useEffect(() => {

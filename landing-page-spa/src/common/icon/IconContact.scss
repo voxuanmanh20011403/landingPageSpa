@@ -124,6 +124,7 @@
   right: 10px;
   bottom: 15%;
   @include mobile {
+    right: 0;
     bottom: 10%;
   }
 }
@@ -131,6 +132,7 @@
   right: 10px;
   bottom: 25%;
   @include mobile {
+    right: 0;
     bottom: 20%;
   }
 }
@@ -139,6 +141,7 @@
   right: 10px;
   bottom: 35%;
   @include mobile {
+    right: 0;
     bottom: 30%;
   }
 }
@@ -147,6 +150,7 @@
   right: 10px;
   bottom: 45%;
   @include mobile {
+    right: 0;
     bottom: 40%;
   }
 }
@@ -155,6 +159,7 @@
   right: 10px;
   bottom: 55%;
   @include mobile {
+    right: 0;
     bottom: 50%;
   }
 }
