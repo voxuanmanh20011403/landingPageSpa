@@ -20,14 +20,14 @@ const ListIconItem = [
     alt: "Facebook",
   },
   {
-    href: "https://wa.me/0374811004",
+    href: "https://wa.me/84374811004?text=Zenith%20Spa",
     className: "Contact-icon-whatsapp",
     background: "#20d142",
     src: whatsapp,
     alt: "WhatsApp",
   },
   {
-    href: "https://kakao.com",
+    href: "tel:+84374811004",
     className: "Contact-icon-kakao",
     background: "#ffeb3b",
     src: kakao,

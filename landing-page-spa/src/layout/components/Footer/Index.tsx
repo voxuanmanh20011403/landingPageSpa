@@ -23,7 +23,7 @@ export default function FooterComponent() {
             {t("footer.spa.content")}
           </Col>
           <Col xs={24} sm={24} md={8}>
-            <Row justify="center">
+            <Row>
               <Col>
                 <Typography.Title level={4} style={{ color: "white" }}>
                   {t("footer.information.title")}
@@ -31,7 +31,7 @@ export default function FooterComponent() {
                 <Space direction="vertical" size="middle">
                   <Space>
                     <HomeOutlined />
-                    <Text>{t("footer.information.title")}</Text>
+                    <Text>{t("footer.information.address")}</Text>
                   </Space>
                   <Space>
                     <PhoneOutlined />
