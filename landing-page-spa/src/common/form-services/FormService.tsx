@@ -49,9 +49,14 @@ export default function FormService() {
 
     setLoading(true);
     try {
-      await emailjs.send("service_4nomeb7", "template_l8zw4im", values, {
-        publicKey: "dLCeSbrDX5hdc30jP",
-      });
+      await emailjs.send(
+        process.env.REACT_APP_EMAIL_SERVICE_ID || "",
+        process.env.REACT_APP_EMAIL_TEMPLATE_ID || "",
+        values,
+        {
+          publicKey: process.env.REACT_APP_EMAIL_PUBLIC_KEY || "",
+        }
+      );
 
       notification.success({
         message: t("home.formService.message.success"),
