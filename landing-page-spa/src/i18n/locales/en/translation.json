@@ -4,13 +4,15 @@
   "priceList": "Price List",
   "spaceAndRoom": "Space",
   "contact": "Contact",
+
   "home.refund": "IF YOU’RE NOT SATISFIED PLEASE DO NOT TO PAY !",
-  "spaCenter": "Spa & Beauty Center",
+  "home.spaceRoom": "Space & Room",
+  "home.bookService": "BOOK A SERVICE",
 
   "home.title": "HEALING HANDS SPA 5% <br /> OFF FOR PREVIOUS BOOKERS",
-  "home.description1": " With more than 10 years of experience working as well as teaching in the field of massage in Ho Chi Minh City. Coming to service",
-  "home.description2": " Massage Da Nang with enthusiasm and a team of skilled technicians, we have been receiving a lot of satisfaction from many customers.",
-  "home.description3": "We are committed to bringing real value to you.",
+  "home.description1": "With over a decade of expertise in massage therapy and education in Ho Chi Minh City.",
+  "home.description2": "We bring our passion and highly skilled team to Massage Da Nang, ensuring exceptional service and unparalleled satisfaction for our valued clients.",
+  "home.description3": "Our commitment is to deliver genuine value and a rejuvenating experience tailored just for you.",
   "home.numberCustomerYear": "Opening day of the year",
   "home.numberCustomerSatisfaction": "Customer Satisfaction",
   "home.numberCustomerAvailable": "Beds are available",
@@ -54,12 +56,28 @@
 
   "home.formService.button": "BOOKING",
 
+  "home.SliderHome.slider1.text1": "Spa & Beauty Center",
+  "home.SliderHome.slider1.text2": "Relaxing Spa",
+  "home.SliderHome.slider1.text3": "And Recovery",
+  "home.SliderHome.slider1.text4": "Everything you need to enjoy a wonderful spa experience is available at our Spa.",
+
+  "home.SliderHome.slider2.text2": "Comprehensive",
+  "home.SliderHome.slider2.text3": "Body Care",
+  "home.SliderHome.slider2.text4": "With a perfect blend of love and care, we are committed to providing you with an exceptional spa experience in your city.",
+
+  "home.SliderHome.slider3.text2": "Professional",
+  "home.SliderHome.slider3.text3": "Body Care",
+  "home.SliderHome.slider3.text4": "With a harmonious blend of affection and expertise, we are dedicated to delivering an unparalleled spa experience right in your city.",
+  "home.SliderHome.booking": "BOOKING",
+
   "footer.spa.title": "Zenith Spa",
-  "footer.spa.content": "With more than 10 years of experience working as well as teaching in the field of massage in Ho Chi Minh City. Coming to service Massage Da Nang with enthusiasm and a team of skilled technicians, we have been receiving a lot of satisfaction from many customers.We are committed to bringing real value to you.",
+  "footer.spa.content": "With over a decade of expertise in massage therapy and education in Ho Chi Minh City. We bring our passion and highly skilled team to Massage Da Nang, ensuring exceptional service and unparalleled satisfaction for our valued clients. Our commitment is to deliver genuine value and a rejuvenating experience tailored just for you.",
   "footer.information.title": "CONTACT INFORMATION",
-  "footer.information.address": "204 Võ Nguyên Giáp, Phước Mỹ, Sơn Trà, Đà Nẵng",
+  "footer.information.address": "204 Vo Nguyen Giap, Phuoc My, Son Tra, Da Nang",
   "footer.information.phone": "0374 811 004",
   "footer.information.email": "zenithspadn@gmail.com",
+  "footer.information.facebook": "Zenith Pham ",
+  "footer.google.title": "GOOGLE MAPS",
 
   "contact.step1": "Booking in zenithspadn.com",
   "contact.step2": "Spa Confirm via email or phone number",
@@ -68,5 +86,9 @@
   "contact.step5": "Enjoy fruit, tea, medicinal foot bath",
   "contact.step6": "Choose massage scent and notes for the Technician",
   "contact.step7": "Change clothes and enjoy the comfortable feeling",
-  "contact.step8": "Pay and give feedback after completion"
+  "contact.step8": "Pay and give feedback after completion",
+
+  "service.title": "OUR SERVICE ",
+  "priceList.title": "PRICE LIST",
+  "contact.title": "CONTACT US"
 }

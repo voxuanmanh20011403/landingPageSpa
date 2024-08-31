@@ -31,7 +31,7 @@ export default function Home() {
           >
             <VideoPlay src={video} />
 
-            <TitleComponent title="Space & Room" />
+            <TitleComponent title={t("home.spaceRoom")} />
 
             <SliderBranch />
           </div>
@@ -39,7 +39,7 @@ export default function Home() {
 
           <NumberCustomer />
 
-          <TitleComponent title=" BOOK A SERVICE" />
+          <TitleComponent title={t("home.bookService")} />
 
           <FormService />
         </div>

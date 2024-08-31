@@ -30,7 +30,6 @@ const CardService = (props: CardServiceProps) => {
           />
         </div>
       }
-      
     >
       <Card.Meta
         title={title}
@@ -38,9 +37,9 @@ const CardService = (props: CardServiceProps) => {
           <>
             <>
               Rates: <br />
-              60min - {rate60} <br />
-              90min - {rate90} <br />
-              120min - {rate120}
+              {rate60} <br />
+              {rate90} <br />
+              {rate120}
             </>
           </>
         }

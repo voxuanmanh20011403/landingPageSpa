@@ -21,29 +21,27 @@ const SliderHome = () => {
   const slides = [
     {
       image: slide1,
-      text1: t("spaCenter"),
-      text2: "Spa thư giãn ",
-      text3: "Và phục hồi",
-      text4:
-        "Tất cả những điều bạn cần để tận hưởng một trải nghiệm spa tuyệt vời đều có tại Spa chúng tôi.",
+      text1: t("home.SliderHome.slider1.text1"),
+      text2: t("home.SliderHome.slider1.text2"),
+      text3: t("home.SliderHome.slider1.text3"),
+      text4: t("home.SliderHome.slider1.text4"),
     },
     {
       image: slide2,
-      text1: t("spaCenter"),
-      text2: "Chăm sóc ",
-      text3: "toàn diện cơ thể",
-      text4:
-        "Với sự kết hợp hoàn hảo giữa yêu thương và chăm sóc, chúng tôi cam kết mang đến cho bạn trải nghiệm spa vượt trội tại thành phố của bạn.",
+      text1: t("home.SliderHome.slider1.text1"),
+      text2: t("home.SliderHome.slider2.text2"),
+      text3: t("home.SliderHome.slider2.text3"),
+      text4: t("home.SliderHome.slider2.text4"),
     },
     {
       image: slide3,
-      text1: t("spaCenter"),
-      text2: "Chuyên nghiệp",
-      text3: "toàn diện cơ thể",
-      text4:
-        "Với sự kết hợp hoàn hảo giữa yêu thương và chăm sóc, chúng tôi cam kết mang đến cho bạn trải nghiệm spa vượt trội tại thành phố của bạn.",
+      text1: t("home.SliderHome.slider1.text1"),
+      text2: t("home.SliderHome.slider3.text2"),
+      text3: t("home.SliderHome.slider3.text3"),
+      text4: t("home.SliderHome.slider3.text4"),
     },
   ];
+
   return (
     <Swiper
       spaceBetween={50}
@@ -102,7 +100,7 @@ const SliderHome = () => {
                   fontSize: "20px",
                 }}
               >
-                Đặt Lịch
+                {t("home.SliderHome.booking")}
               </span>
             </Button>
           </div>

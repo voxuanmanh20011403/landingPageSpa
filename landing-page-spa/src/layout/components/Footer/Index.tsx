@@ -7,7 +7,6 @@ import {
   HomeOutlined,
   PhoneOutlined,
   MailOutlined,
-  WhatsAppOutlined,
   FacebookOutlined,
 } from "@ant-design/icons";
 import MapComponent from "../../../common/google-map/MapComponent";
@@ -43,15 +42,9 @@ export default function FooterComponent() {
                     <Text>{t("footer.information.email")}</Text>
                   </Space>
                   <Space>
-                  <FacebookOutlined />
+                    <FacebookOutlined />
 
                     <Text>{t("footer.information.facebook")}</Text>
-                  </Space>
-                  
-                  <Space>
-                    <WhatsAppOutlined />
-
-                    <Text>{t("footer.information.phone")}</Text>
                   </Space>
                 </Space>
               </Col>
@@ -60,7 +53,7 @@ export default function FooterComponent() {
           <Col xs={24} sm={24} md={8}>
             <Row>
               <Typography.Title level={4} style={{ color: "white" }}>
-                GOOGLE MAPS
+                {t("footer.google.title")}
               </Typography.Title>
               <MapComponent />
             </Row>

@@ -4,11 +4,13 @@ import TitleComponent from "../../common/title/TitleComponent";
 import { CardServiceProps, ServicesList } from "./Services.string";
 import { Col, Row } from "antd";
 import "./Services.scss";
+import { useTranslation } from "react-i18next";
 
 export default function Services() {
+  const { t } = useTranslation();
   return (
     <section className={classNames("service", "content-component")}>
-      <TitleComponent title="DỊCH VỤ CỦA CHÚNG TÔI" />
+      <TitleComponent title={t("service.title")} />
 
       <Row gutter={[32, 16]} className="custom-row">
         {ServicesList.map((item: CardServiceProps, index: number) => (

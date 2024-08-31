@@ -1,9 +1,94 @@
 {
-  "home": "홈홈홈",
+  "home": "홈",
   "services": "서비스",
-  "priceList": "가격표",
-  "spaceAndRoom": "Space",
+  "priceList": "가격 목록",
+  "spaceAndRoom": "공간",
   "contact": "연락처",
-  "home.refund": "IF YOU’RE NOT SATISFIED PLEASE DO NOT TO PAY !",
-  "spaCenter": "스파 & 뷰티 센터"
+
+  "home.refund": "만족하지 않으시면 결제하지 마세요!",
+  "home.spaceRoom": "공간 및 방",
+  "home.bookService": "서비스 예약",
+
+  "home.title": "힐링 핸즈 스파 5% <br /> 재방문 고객 할인",
+  "home.description1": "호치민 시에서 10년 이상의 마사지 치료와 교육 경험을 보유하고 있습니다.",
+  "home.description2": "우리의 열정과 고도로 숙련된 팀을 다낭 마사지에 소개하여, 소중한 고객님들께 뛰어난 서비스와 비교할 수 없는 만족을 보장합니다.",
+  "home.description3": "진정한 가치와 맞춤형의 재충전 경험을 제공하기 위해 헌신하고 있습니다.",
+  "home.numberCustomerYear": "올해 개장일",
+  "home.numberCustomerSatisfaction": "고객 만족도",
+  "home.numberCustomerAvailable": "사용 가능한 침대 수",
+
+  "home.formService.message.success": "예약 성공!",
+  "home.formService.description.success": "귀하의 정보가 Zenith Spa에 전송되었습니다!",
+  "home.formService.message.error": "예약 실패",
+  "home.formService.description.error": "죄송합니다, 다시 시도하거나 Zenith Spa 관리자에게 연락해 주세요.",
+
+  "home.formService.title": "빠른 예약",
+
+  "home.formService.name": "이름",
+  "home.formService.name.message": "이름을 입력해 주세요!",
+  "home.formService.name.massage2": "이름은 문자(베트남어 문자 포함), 공백, 유효한 구두점만 포함해야 합니다!",
+  "home.formService.name.placeholder": "전체 이름",
+
+  "home.formService.phone": "전화번호",
+  "home.formService.phone.message": "전화번호를 입력해 주세요!",
+  "home.formService.phone.placeholder": "전화번호",
+
+  "home.formService.email": "이메일",
+  "home.formService.email.message": "이메일을 입력해 주세요!",
+  "home.formService.email.massage2": "유효하지 않은 이메일입니다! 예: ...@gmail.com",
+  "home.formService.email.placeholder": "연락 이메일",
+
+  "home.formService.people": "인원 수",
+  "home.formService.people.message": "인원 수를 입력해 주세요!",
+  "home.formService.people.massage2": "인원 수는 유효한 숫자여야 합니다!",
+  "home.formService.people.placeholder": "몇 명입니까?",
+
+  "home.formService.datePicker": "체크인 날짜/시간",
+  "home.formService.datePicker.message": "날짜와 시간을 선택해 주세요!",
+
+  "home.formService.menu": "메뉴",
+  "home.formService.menu.message": "최소한 하나의 메뉴 항목을 선택해 주세요!",
+
+  "home.formService.duration": "기간",
+
+  "home.formService.requirements": "메시지",
+  "home.formService.requirements.placeholder": "기타 요구 사항은 무엇입니까?",
+
+  "home.formService.button": "예약하기",
+
+  "home.SliderHome.slider1.text1": "스파 & 뷰티 센터",
+  "home.SliderHome.slider1.text2": "편안한 스파",
+  "home.SliderHome.slider1.text3": "및 회복",
+  "home.SliderHome.slider1.text4": "우리 스파에서 멋진 스파 경험을 즐기기 위해 필요한 모든 것이 준비되어 있습니다.",
+
+  "home.SliderHome.slider2.text2": "종합적인",
+  "home.SliderHome.slider2.text3": "신체 관리",
+  "home.SliderHome.slider2.text4": "사랑과 관심을 완벽하게 혼합하여, 도시에서 탁월한 스파 경험을 제공하기 위해 최선을 다하고 있습니다.",
+
+  "home.SliderHome.slider3.text2": "전문적인",
+  "home.SliderHome.slider3.text3": "신체 관리",
+  "home.SliderHome.slider3.text4": "애정과 전문성을 조화롭게 혼합하여, 도시에 최고의 스파 경험을 제공하기 위해 헌신하고 있습니다.",
+  "home.SliderHome.booking": "예약하기",
+
+  "footer.spa.title": "Zenith Spa",
+  "footer.spa.content": "호치민 시에서 10년 이상의 마사지 치료와 교육 경험을 보유하고 있습니다. 우리의 열정과 고도로 숙련된 팀을 다낭 마사지에 소개하여, 소중한 고객님들께 뛰어난 서비스와 비교할 수 없는 만족을 보장합니다. 진정한 가치와 맞춤형의 재충전 경험을 제공하기 위해 헌신하고 있습니다.",
+  "footer.information.title": "연락처 정보",
+  "footer.information.address": "204 Vo Nguyen Giap, Phuoc My, Son Tra, Da Nang",
+  "footer.information.phone": "0374 811 004",
+  "footer.information.email": "zenithspadn@gmail.com",
+  "footer.information.facebook": "Zenith Pham",
+  "footer.google.title": "구글 지도",
+
+  "contact.step1": "zenithspadn.com에서 예약하기",
+  "contact.step2": "스파에서 이메일 또는 전화번호로 확인",
+  "contact.step3": "스파에 도착하여 예약 확인",
+  "contact.step4": "직원이 적합한 서비스 패키지를 안내",
+  "contact.step5": "과일, 차, 약용 발목욕을 즐기기",
+  "contact.step6": "마사지 향과 기술자에게 전달할 메모 선택",
+  "contact.step7": "옷을 갈아입고 편안한 느낌을 즐기기",
+  "contact.step8": "결제 후 피드백 제공",
+
+  "service.title": "우리의 서비스",
+  "priceList.title": "가격 목록",
+  "contact.title": "연락처"
 }
