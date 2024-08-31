@@ -1,6 +1,6 @@
 @import "../../components/Reponsive/Responsive.scss";
 
-.border-img {
+.border-bg {
   width: 60px;
   height: 60px;
   top: 25px;
@@ -107,7 +107,8 @@
 .Contact-icon,
 .Contact-icon-whatsapp,
 .Contact-icon-fb,
-.Contact-icon-kakao {
+.Contact-icon-kakao,
+.Contact-icon-map {
   position: fixed;
   visibility: visible;
   background-color: transparent;
@@ -149,10 +150,11 @@
     bottom: 40%;
   }
 }
+
 .Contact-icon-map {
   right: 10px;
-  bottom: 45%;
+  bottom: 55%;
   @include mobile {
-    bottom: 40%;
+    bottom: 50%;
   }
 }
