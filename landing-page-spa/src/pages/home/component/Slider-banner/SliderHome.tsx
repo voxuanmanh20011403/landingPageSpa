@@ -82,7 +82,7 @@ const SliderHome = () => {
             <span>{slide.text3}</span>
             <span>{slide.text4}</span>
             <Button
-              type="primary"
+              // type="primary"
               style={{
                 display: "flex",
                 alignItems: "center",

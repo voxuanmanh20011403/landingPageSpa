@@ -1,5 +1,4 @@
 import { Button, Drawer, Layout, Menu, Select } from "antd";
-
 import { useState } from "react";
 import classNames from "classnames";
 import { MenuOutlined } from "@ant-design/icons";
@@ -11,6 +10,7 @@ import kor from "../../../assets/images/local/kor.png";
 
 const { Header } = Layout;
 const { Option } = Select;
+
 const headerStyle: React.CSSProperties = {
   display: "flex",
   textAlign: "center",
@@ -19,11 +19,11 @@ const headerStyle: React.CSSProperties = {
   paddingInline: 48,
   lineHeight: "64px",
 };
+
 const menu: React.CSSProperties = {
   flex: 1,
   minWidth: 0,
   width: "100%",
-
   fontFamily: "Work Sans",
 };
 
@@ -39,9 +39,28 @@ export default function HeaderComponent() {
   const onClose = () => {
     setVisible(false);
   };
+
   const handleLanguageChange = (value: string): void => {
     i18n.changeLanguage(value);
   };
+
+  const handleMenuClick = (e: any) => {
+    createFlowerEffect(e.domEvent);
+    navigate(e.key);
+  };
+
+  const createFlowerEffect = (event: any) => {
+    const flower = document.createElement("div");
+    flower.className = "flower";
+    flower.style.left = `${event.clientX}px`;
+    flower.style.top = `${event.clientY}px`;
+    document.body.appendChild(flower);
+
+    setTimeout(() => {
+      flower.remove();
+    }, 1000);
+  };
+
   return (
     <>
       <Header style={headerStyle} className={classNames("header-component")}>
@@ -51,9 +70,7 @@ export default function HeaderComponent() {
           mode="horizontal"
           defaultSelectedKeys={["/"]}
           selectedKeys={[window.location.pathname]}
-          onClick={({ key }) => {
-            navigate(key);
-          }}
+          onClick={handleMenuClick}
           items={[
             {
               label: t("home"),
@@ -108,9 +125,7 @@ export default function HeaderComponent() {
             mode="vertical"
             defaultSelectedKeys={["/"]}
             selectedKeys={[window.location.pathname]}
-            onClick={({ key }) => {
-              navigate(key);
-            }}
+            onClick={handleMenuClick} 
             items={[
               {
                 label: t("home"),

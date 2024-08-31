@@ -40,3 +40,24 @@
     }
   }
 }
+@keyframes flowerAnimation {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-150px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.flower {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../../assets//images/home/slider/image.png"); /* Thay bằng đường dẫn đến hình ảnh của hoa */
+  background-size: contain;
+  animation: flowerAnimation 2s ease-out forwards;
+  pointer-events: none;
+  z-index: 1000;
+}

@@ -181,8 +181,8 @@ export default function FormService() {
         <Row className="row">
           <Col span={12}>
             <Form.Item
-              name={t("home.formService.menu")}
-              label="Menu"
+              label={t("home.formService.menu")}
+              name="menu"
               rules={[
                 {
                   required: true,
@@ -215,7 +215,10 @@ export default function FormService() {
           </Col>
         </Row>
 
-        <Form.Item label="Message" name={t("home.formService.requirements")}>
+        <Form.Item
+          name="requirements"
+          label={t("home.formService.requirements")}
+        >
           <Input
             placeholder={t("home.formService.requirements.placeholder")}
             size="large"
