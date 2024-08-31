@@ -8,6 +8,7 @@ import {
   PhoneOutlined,
   MailOutlined,
   WhatsAppOutlined,
+  FacebookOutlined,
 } from "@ant-design/icons";
 import MapComponent from "../../../common/google-map/MapComponent";
 import { useTranslation } from "react-i18next";
@@ -41,7 +42,12 @@ export default function FooterComponent() {
                     <MailOutlined />
                     <Text>{t("footer.information.email")}</Text>
                   </Space>
+                  <Space>
+                  <FacebookOutlined />
 
+                    <Text>{t("footer.information.facebook")}</Text>
+                  </Space>
+                  
                   <Space>
                     <WhatsAppOutlined />
 
