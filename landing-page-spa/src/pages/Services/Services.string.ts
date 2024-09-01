@@ -22,7 +22,7 @@ export const ServicesList: CardServiceProps[] = [
     urlImage: Aroma,
     rate60: "60min : 600.000VNĐ ( 24$ )",
     rate90: "90min : 800.000VNĐ ( 32$ )",
-    rate120: "120min : 950.000VNĐ ( 24$ )",
+    rate120: "120min : 950.000VNĐ ( 38$ )",
     descriptions: "",
   },
   {
@@ -30,7 +30,7 @@ export const ServicesList: CardServiceProps[] = [
     urlImage: Dry,
     rate60: "60 mins : 600.000VNĐ ( 24$ )",
     rate90: "90 mins : 800.000VNĐ ( 32$ )",
-    rate120: "120 mins : 950.000VNĐ ( 24$ )",
+    rate120: "120 mins : 950.000VNĐ ( 38$ )",
     descriptions: "",
   },
   {
@@ -38,7 +38,7 @@ export const ServicesList: CardServiceProps[] = [
     urlImage: Stone,
     rate60: "60 mins : 600.000VNĐ ( 24$ )",
     rate90: "90 mins : 800.000VNĐ ( 32$ )",
-    rate120: "120 mins : 950.000VNĐ ( 24$ )",
+    rate120: "120 mins : 950.000VNĐ ( 38$ )",
     descriptions: "",
   },
   {
@@ -46,7 +46,7 @@ export const ServicesList: CardServiceProps[] = [
     urlImage: Bamboo,
     rate60: "60 mins : 600.000VNĐ ( 24$ )",
     rate90: "90 mins : 800.000VNĐ ( 32$ )",
-    rate120: "120 mins : 950.000VNĐ ( 24$ )",
+    rate120: "120 mins : 950.000VNĐ ( 38$ )",
     descriptions: "",
   },
   {
@@ -54,7 +54,7 @@ export const ServicesList: CardServiceProps[] = [
     urlImage: Kid,
     rate60: "60 mins : 600.000VNĐ ( 24$ )",
     rate90: "90 mins : 800.000VNĐ ( 32$ )",
-    rate120: "120 mins : 950.000VNĐ ( 24$ )",
+    rate120: "120 mins : 950.000VNĐ ( 38$ )",
     descriptions: "",
   },
   {
@@ -62,14 +62,14 @@ export const ServicesList: CardServiceProps[] = [
     urlImage: Maternity,
     rate60: "60 mins : 600.000VNĐ ( 24$ )",
     rate90: "90 mins : 800.000VNĐ ( 32$ )",
-    rate120: "120 mins : 950.000VNĐ ( 24$ )",
+    rate120: "120 mins : 950.000VNĐ ( 38$ )",
     descriptions: "",
   },
   {
     title: "Foot Massage",
     urlImage: Foot,
     rate60: "60 mins : 450.000VNĐ ( 18$ )",
-    rate90: "90 mins : Updating)",
+    rate90: "90 mins : Updating",
     rate120: "120 mins : Updating",
     descriptions: "",
   },
