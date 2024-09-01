@@ -1,8 +1,8 @@
-import TitleComponent from "../../common/title/TitleComponent";
 import classNames from "classnames";
+import { useTranslation } from "react-i18next";
+import TitleComponent from "../../common/title/TitleComponent";
 import menu1 from "../../assets/images/price-lists/menu1.jpg";
 import menu2 from "../../assets/images/price-lists/menu2.jpg";
-import { useTranslation } from "react-i18next";
 
 export default function PriceList() {
   const { t } = useTranslation();

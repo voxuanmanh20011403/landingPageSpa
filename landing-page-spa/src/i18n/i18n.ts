@@ -12,15 +12,13 @@ const resources = {
   },
 };
 
-i18n
-  .use(initReactI18next) // Kết nối với React
-  .init({
-    resources,
-    lng: "en", // Ngôn ngữ mặc định
-    fallbackLng: "en", // Ngôn ngữ dự phòng
-    interpolation: {
-      escapeValue: false, // React đã tự động xử lý XSS
-    },
-  });
+i18n.use(initReactI18next).init({
+  resources,
+  lng: "en",
+  fallbackLng: "en",
+  interpolation: {
+    escapeValue: false,
+  },
+});
 
 export default i18n;

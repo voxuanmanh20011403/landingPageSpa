@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Card } from "antd";
-import "./CardService.scss"; // Nhớ import file CSS chứa các class mới
+import "./CardService.scss";
 
 interface CardServiceProps {
   urlImage?: string;

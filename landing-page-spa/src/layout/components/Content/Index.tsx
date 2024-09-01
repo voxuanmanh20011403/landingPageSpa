@@ -1,8 +1,8 @@
 import React from "react";
 import { Layout } from "antd";
-import "./Styles.scss";
 import IconContact from "../../../common/icon/IconContact";
 import ScrollToTopButton from "../../../common/back-to-top/ScrollToTopButton";
+import "./Styles.scss";
 interface IndexProps {
   children: React.ReactNode;
 }

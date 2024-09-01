@@ -1,7 +1,7 @@
 import { Col, Row } from "antd";
 import classNames from "classnames";
-import "./NumberCustomer.scss";
 import { useTranslation } from "react-i18next";
+import "./NumberCustomer.scss";
 
 export default function NumberCustomer() {
   const { t } = useTranslation();

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Steps } from "antd";
 import { ArrowRightOutlined } from "@ant-design/icons";
-import "./VerticalSteps.scss";
 import classNames from "classnames";
 import { useTranslation } from "react-i18next";
+import "./VerticalSteps.scss";
 
 const { Step } = Steps;
 

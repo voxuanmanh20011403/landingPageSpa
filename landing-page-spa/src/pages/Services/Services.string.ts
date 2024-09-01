@@ -1,3 +1,12 @@
+import Aroma from "../../assets/images/services/aroma.jpg";
+import Stone from "../../assets/images/services/stone.jpg";
+import Bamboo from "../../assets/images/services/Bamboo.jpg";
+import Kid from "../../assets/images/services/kid.png";
+import Maternity from "../../assets/images/services/Maternity.webp";
+import Foot from "../../assets/images/services/Foot.webp";
+import Dry from "../../assets/images/services/dry.png";
+import TotalFoot from "../../assets/images/services/foot-total.jpg";
+
 export interface CardServiceProps {
   title?: string;
   urlImage?: string;
@@ -6,16 +15,6 @@ export interface CardServiceProps {
   rate120?: string;
   descriptions?: string;
 }
-import Aroma from "../../assets/images/services/aroma.jpg";
-import Stone from "../../assets/images/services/stone.jpg";
-import Bamboo from "../../assets/images/services/Bamboo.jpg";
-import Kid from "../../assets/images/services/kid.png";
-import Maternity from "../../assets/images/services/Maternity.webp";
-import Foot from "../../assets/images/services/Foot.webp";
-import Dry from "../../assets/images/services/dry.png";
-
-import TotalFoot from "../../assets/images/services/foot-total.jpg";
-
 export const ServicesList: CardServiceProps[] = [
   {
     title: "Aroma Massage",
