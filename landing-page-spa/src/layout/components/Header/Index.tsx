@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import eng from "../../../assets/images/local/engl.png";
 import kor from "../../../assets/images/local/kor.png";
+import logo from "../../../assets/images/logo_zeni.png";
 
 const { Header } = Layout;
 const { Option } = Select;
@@ -64,6 +65,12 @@ export default function HeaderComponent() {
   return (
     <>
       <Header style={headerStyle} className={classNames("header-component")}>
+        <img
+          onClick={() => navigate("/")}
+          src={logo}
+          alt="logo"
+          className="logo-menu-laptop"
+        />
         <Menu
           className={classNames("laptop-menu")}
           style={menu}
@@ -125,7 +132,7 @@ export default function HeaderComponent() {
             mode="vertical"
             defaultSelectedKeys={["/"]}
             selectedKeys={[window.location.pathname]}
-            onClick={handleMenuClick} 
+            onClick={handleMenuClick}
             items={[
               {
                 label: t("home"),

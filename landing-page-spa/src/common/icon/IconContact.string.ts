@@ -3,6 +3,7 @@ import zalo from "../../assets/images/contact/zalo.png";
 import whatsapp from "../../assets/images/contact/whatsapp.png";
 import kakao from "../../assets/images/contact/kakao.png";
 import map from "../../assets/images/contact/ggmap.png";
+import ig from "../../assets/images/contact/insta.png";
 
 const ListIconItem = [
   {
@@ -36,9 +37,17 @@ const ListIconItem = [
   {
     href: "https://www.google.com/maps?ll=16.06851,108.244748&z=15&t=m&hl=vi&gl=US&mapclient=embed&cid=9285323860247711077",
     className: "Contact-icon-map",
-    background: "#ffeb3b",
+    background: "#85d7e1",
     src: map,
     alt: "Map",
+  },
+
+  {
+    href: "http://www.instagram.com/zenith2434",
+    className: "Contact-icon-ig",
+    background: "#f2b5c2",
+    src: ig,
+    alt: "ig",
   },
 ];
 

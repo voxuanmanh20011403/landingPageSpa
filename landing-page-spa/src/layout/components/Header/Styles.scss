@@ -40,6 +40,15 @@
       color: black;
     }
   }
+  .logo-menu-laptop {
+    width: 15%;
+    padding-top: 1%;
+    z-index: 5;
+    cursor: pointer;
+    @include mobile {
+      display: none !important;
+    }
+  }
 }
 @keyframes flowerAnimation {
   0% {

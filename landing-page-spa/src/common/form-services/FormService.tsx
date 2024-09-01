@@ -212,8 +212,8 @@ export default function FormService() {
           <Col span={12}>
             <Form.Item name="duration" label={t("home.formService.duration")}>
               <Radio.Group className="wrap_radio">
-                <Radio value="30"> 30 mins </Radio>
                 <Radio value="60"> 60 mins </Radio>
+                <Radio value="90"> 90 mins </Radio>
                 <Radio value="120"> 120 mins </Radio>
               </Radio.Group>
             </Form.Item>

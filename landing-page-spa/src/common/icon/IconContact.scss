@@ -108,7 +108,8 @@
 .Contact-icon-whatsapp,
 .Contact-icon-fb,
 .Contact-icon-kakao,
-.Contact-icon-map {
+.Contact-icon-map,
+.Contact-icon-ig {
   position: fixed;
   visibility: visible;
   background-color: transparent;
@@ -140,6 +141,7 @@
 .Contact-icon-whatsapp {
   right: 10px;
   bottom: 35%;
+  border-radius: 50%;
   @include mobile {
     right: 0;
     bottom: 30%;
@@ -161,5 +163,13 @@
   @include mobile {
     right: 0;
     bottom: 50%;
+  }
+}
+.Contact-icon-ig {
+  right: 10px;
+  bottom: 65%;
+  @include mobile {
+    right: 0;
+    bottom: 60%;
   }
 }
