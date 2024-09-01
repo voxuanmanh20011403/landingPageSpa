@@ -5,6 +5,7 @@ interface ListIconProps {
   src?: string;
   alt?: string;
 }
+import classNames from "classnames";
 import "../IconContact.scss";
 export default function ListIcon(props: ListIconProps) {
   const { href, className, background, src, alt } = props;
@@ -13,7 +14,7 @@ export default function ListIcon(props: ListIconProps) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={className}
+      className={classNames(className, "icon-link")}
     >
       <div className="border-bg" style={{ background: background }}></div>
       <div className="border-img" style={{ background: background }}>
