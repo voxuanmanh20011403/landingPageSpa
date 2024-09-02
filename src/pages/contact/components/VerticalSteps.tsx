@@ -15,7 +15,7 @@ const VerticalSteps: React.FC = () => {
     { title: "Step 2", content: t("contact.step2") },
     { title: "Step 3", content: t("contact.step3") },
     { title: "Step 4", content: t("contact.step4") },
-    { title: "Step 5", ontent: t("contact.step5") },
+    { title: "Step 5", content: t("contact.step5") },
     { title: "Step 6", content: t("contact.step6") },
     { title: "Step 7", content: t("contact.step7") },
     { title: "Step 8", content: t("contact.step8") },
