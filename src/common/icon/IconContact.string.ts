@@ -2,7 +2,7 @@ import fb from "../../assets/images/contact/fb.png";
 import zalo from "../../assets/images/contact/zalo.png";
 import whatsapp from "../../assets/images/contact/whatsapp.png";
 import kakao from "../../assets/images/contact/kakao.png";
-import map from "../../assets/images/contact/ggmap.png";
+import map from "../../assets/images/contact/ggmap.svg";
 import ig from "../../assets/images/contact/insta.png";
 
 const ListIconItem = [

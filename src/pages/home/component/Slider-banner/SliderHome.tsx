@@ -21,21 +21,18 @@ const SliderHome = () => {
   const slides = [
     {
       image: slide1,
-      text1: t("home.SliderHome.slider1.text1"),
       text2: t("home.SliderHome.slider1.text2"),
       text3: t("home.SliderHome.slider1.text3"),
       text4: t("home.SliderHome.slider1.text4"),
     },
     {
       image: slide2,
-      text1: t("home.SliderHome.slider1.text1"),
       text2: t("home.SliderHome.slider2.text2"),
       text3: t("home.SliderHome.slider2.text3"),
       text4: t("home.SliderHome.slider2.text4"),
     },
     {
       image: slide3,
-      text1: t("home.SliderHome.slider1.text1"),
       text2: t("home.SliderHome.slider3.text2"),
       text3: t("home.SliderHome.slider3.text3"),
       text4: t("home.SliderHome.slider3.text4"),
@@ -75,7 +72,8 @@ const SliderHome = () => {
               width: "inherit",
             }}
           >
-            <span>{slide.text1}</span>
+            <span>{t("home.SliderHome.slider1.text")}</span>
+            <span>{t("home.SliderHome.slider1.text1")}</span>
             <span>{slide.text2}</span>
             <span>{slide.text3}</span>
             <span>{slide.text4}</span>
