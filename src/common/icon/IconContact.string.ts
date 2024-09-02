@@ -28,7 +28,7 @@ const ListIconItem = [
     alt: "WhatsApp",
   },
   {
-    href: "http://qr.kakao.com/talk/59UsjaeWyuOqnPTk6klVEPTXAEE-",
+    href: "http://qr.kakao.com/talk/s6UgcAW.gaovXr4c1dxgwBwFsrM-",
     className: "Contact-icon-kakao",
     background: "#ffeb3b",
     src: kakao,

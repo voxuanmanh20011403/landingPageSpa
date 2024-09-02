@@ -16,7 +16,7 @@ export default function NumberCustomer() {
         <h3>{t("home.numberCustomerSatisfaction")}</h3>
       </Col>
       <Col span={8}>
-        <p>20</p>
+        <p>26</p>
         <h3>{t("home.numberCustomerAvailable")}</h3>
       </Col>
     </Row>
