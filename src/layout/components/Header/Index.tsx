@@ -48,6 +48,7 @@ export default function HeaderComponent() {
   const handleMenuClick = (e: any) => {
     createFlowerEffect(e.domEvent);
     navigate(e.key);
+    onClose();
   };
 
   const createFlowerEffect = (event: any) => {
