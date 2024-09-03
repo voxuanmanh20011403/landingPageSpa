@@ -21,6 +21,9 @@ export default function Services() {
               rate60={item.rate60}
               rate90={item.rate90}
               rate120={item.rate120}
+              rate60plus={item.rate60plus}
+              rate90plus={item.rate90plus}
+              title2={item.title2}
             />
           </Col>
         ))}

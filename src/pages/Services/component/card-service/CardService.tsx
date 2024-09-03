@@ -8,6 +8,9 @@ interface CardServiceProps {
   rate60?: string;
   rate90?: string;
   rate120?: string;
+  rate60plus?: string;
+  rate90plus?: string;
+  title2?: string;
 }
 
 const CardService = (props: CardServiceProps) => {
@@ -15,7 +18,16 @@ const CardService = (props: CardServiceProps) => {
   const handleImageLoad = () => {
     setLoading(false);
   };
-  const { urlImage, title, rate60, rate90, rate120 } = props;
+  const {
+    urlImage,
+    title,
+    rate60,
+    rate90,
+    rate120,
+    rate60plus,
+    rate90plus,
+    title2,
+  } = props;
   return (
     <Card
       loading={loading}
@@ -37,10 +49,31 @@ const CardService = (props: CardServiceProps) => {
           <>
             <>
               Rates: <br />
-              {rate60} <br />
-              {rate90} <br />
-              {rate120}
+              {rate60 && (
+                <div>
+                  {rate60} <br />
+                </div>
+              )}
+              {rate90 && (
+                <div>
+                  {rate90} <br />
+                </div>
+              )}
+              {rate120} <br />
             </>
+            {title2 && (
+              <>
+                <span
+                  style={{ fontWeight: "bold", color: " rgba(0, 0, 0, 0.88)" }}
+                >
+                  {title2}
+                </span>{" "}
+                <br />
+                Rates: <br />
+                {rate60plus} <br />
+                {rate90plus} <br />
+              </>
+            )}
           </>
         }
       />
