@@ -63,7 +63,7 @@ export const ServicesList: CardServiceProps[] = [
     title: "Foot Massage",
     urlImage: Foot,
     rate60: "60 mins : 450.000VNĐ ( 18$ )",
-    title2: "Total Foot Massge Rates",
+    title2: "Total Foot Massge",
     rate60plus: "60 mins: 550.000VNĐ ( 22$ )",
     rate90plus: "90 mins : 700.000VNĐ ( 28$ )",
   },
